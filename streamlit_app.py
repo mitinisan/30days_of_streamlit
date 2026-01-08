@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
+import datetime
 
 
 
@@ -95,6 +96,15 @@ if st.button(':material/water:'):
     st.write('Why Hello there')
 else:
     st.write('Goodbye')
+
+
+st.header('st.slider')
+
+st.subheader('Slider')
+
+age = st.slider('How old are you?', 0, 130, 25)
+st.write("I'm ", age, 'years old')
+
 
 
 st.header('END OF FILE')
