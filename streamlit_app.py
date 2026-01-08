@@ -158,5 +158,12 @@ start_color, end_color = st.select_slider(
 )
 st.write("You selected wavelengths between", start_color, "and", end_color)
 
+st.header('Line chart')
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
 
 st.header('END OF FILE')
